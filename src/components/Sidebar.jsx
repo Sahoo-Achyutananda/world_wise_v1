@@ -1,0 +1,22 @@
+import styles from "./Sidebar.module.css";
+import Logo from "./Logo.jsx";
+import AppNav from "./AppNav.jsx";
+
+function Sidebar() {
+  return (
+    <div className={styles.sidebar}>
+      <Logo />
+      <AppNav />
+
+      <p>List of Cities</p>
+
+      <footer className={styles.footer}>
+        <p className={styles.copyright}>
+          &copy; Copyright 2025 by Worldwise Inc.
+        </p>
+      </footer>
+    </div>
+  );
+}
+
+export default Sidebar;
